@@ -1,0 +1,7 @@
+new entry "Necrotic_Artifacts"
+type "Object"
+using "_Container"
+data "RootTemplate" "c271bf2f-9583-40bd-b644-64d5e71296ef"
+data "ValueOverride" "900"
+data "Weight" "4"
+data "Rarity" "VeryRare"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="2" revision="0" build="100"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <!-- Inflict Wounds -->
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d10"/>
+                    <attribute id="Level10" type="LSString" value="7d10"/>
+                    <attribute id="Level11" type="LSString" value="8d10"/>
+                    <attribute id="Level12" type="LSString" value="8d10"/>
+                    <attribute id="Level2" type="LSString" value="3d10"/>
+                    <attribute id="Level3" type="LSString" value="4d10"/>
+                    <attribute id="Level4" type="LSString" value="4d10"/>
+                    <attribute id="Level5" type="LSString" value="5d10"/>
+                    <attribute id="Level6" type="LSString" value="5d10"/>
+                    <attribute id="Level7" type="LSString" value="6d10"/>
+                    <attribute id="Level8" type="LSString" value="6d10"/>
+                    <attribute id="Level9" type="LSString" value="7d10"/>
+                    <attribute id="Name" type="FixedString" value="Necro_InflictWounds"/>
+                    <attribute id="UUID" type="guid" value="17d4eb93-39b2-4bcf-b953-f1219b98db3f"/>
+                </node>
+                <!-- Wounding Ray -->
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level10" type="LSString" value="6d8"/>
+                    <attribute id="Level11" type="LSString" value="7d8"/>
+                    <attribute id="Level12" type="LSString" value="7d8"/>
+                    <attribute id="Level2" type="LSString" value="2d8"/>
+                    <attribute id="Level3" type="LSString" value="3d8"/>
+                    <attribute id="Level4" type="LSString" value="3d8"/>
+                    <attribute id="Level5" type="LSString" value="4d8"/>
+                    <attribute id="Level6" type="LSString" value="4d8"/>
+                    <attribute id="Level7" type="LSString" value="5d8"/>
+                    <attribute id="Level8" type="LSString" value="5d8"/>
+                    <attribute id="Level9" type="LSString" value="6d8"/>
+                    <attribute id="Name" type="FixedString" value="Necro_WoundingRay"/>
+                    <attribute id="UUID" type="guid" value="862cc1db-f8d2-4577-a528-a6586c97bf5f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

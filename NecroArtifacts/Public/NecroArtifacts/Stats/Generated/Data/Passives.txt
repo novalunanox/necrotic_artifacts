@@ -1,0 +1,10 @@
+new entry "Hex_NECRO"
+type "PassiveData"
+// Necrotic Potency
+data "DisplayName" "h5eddf73bgdea4g442dga5f6g682bd0b39cf8" 
+// Once per long rest, this ring's potent aura of death will cause the wearer's next victim to rise again as an <LSTag Type="Status" Tooltip="ENTHRALLED_CORPSE_NECRO">Enthralled Corpse</LSTag> if it dies while <LSTag Type="Spell" Tooltip="Target_Hex">Hexed</LSTag>.
+data "Description" "hade256f4ge7f7g4d4eg9ee3g701290a1cf99"
+data "Icon" "Status_Turned"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasHexStatus() and HasStatus('NECROTIC_POTENCY_NECRO')"
+data "StatsFunctors" "ApplyStatus(LATENT_CORPSE_NECRO,100)"

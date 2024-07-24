@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+			<!-- AMULETS -->
+			<!-- RINGS -->
+				<!-- Ring of Enthralling Death -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hcd912267gcf05g4ec5g9e73g07404405fbf6" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h13f2f8c2g6475g4d0ag97f4g80d09e8b5412" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="52108d0c-d518-4134-a2e6-289ffa8b02fa" />
+					<attribute id="Name" type="LSString" value="NECRO_Ring_of_Enthralling_Death" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6594c1e3-0868-4efd-a93c-b6f4b3bd034d" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Ring_of_Enthralling_Death" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
+				</node>
+			<!-- HELMS -->
+				<!-- Robe of Something -->
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="ha0d2044bg82d2g41e1g8eacgfbfdf9646c69" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h69754c5cgdbfcg4822gb238gf59ce2076dc5" version="1" />
+					<attribute id="Flag" type="int64" value="0" />
+					<attribute id="Icon" type="FixedString" value="FRA_Item_FRA_BaniteLeather_A" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int64" value="-1" />
+					<attribute id="MapKey" type="FixedString" value="4b6dc4c8-540b-4ec0-90f6-20add231ced0" />
+					<attribute id="Name" type="LSString" value="NECRO_Robe_Of_Something" />
+					<attribute id="ParentTemplateId" type="FixedString" value="380cd8af-be6b-42fa-932b-d57e341b28fc" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="004e659d-8256-376a-2079-decbad9c71ee" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Robe_Of_Something" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="380cd8af-be6b-42fa-932b-d57e341b28fc" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209026" />
+					<children>
+						<node id="GameMaster" />
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int64" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- CLOAKS -->
+			<!-- ROBES -->
+			<!-- GLOVES -->
+				<!-- Ilyn's Grasp -->
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="hf5f1d4f5g785cg4131g9611g11f65aa23e2a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h079cdb5eg5a87g438aga8bfgebfb0829301a" version="1" />
+					<attribute id="Flag" type="int64" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_ARM_Bracers_Barbarian" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int64" value="-1" />
+					<attribute id="MapKey" type="FixedString" value="e52fc190-366f-4a07-9dbe-f46bcfd252b3" />
+					<attribute id="Name" type="LSString" value="NECRO_Ilyns_Grasp" />
+					<attribute id="ParentTemplateId" type="FixedString" value="8ee5bdde-c22f-452f-add9-2d82ec3dc390" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="befb0ca1-0b9c-bd09-4427-cfc01c4d8ff4" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Ilyns_Grasp" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="8ee5bdde-c22f-452f-add9-2d82ec3dc390" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209026" />
+					<children>
+						<node id="GameMaster" />
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int64" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			<!-- BOOTS -->
+				<!-- Step of Death -->
+				<node id="GameObjects">
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="hc32f009fg045dg4273ga4e2g9b2461650dd1" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h97689dc3g7464g43b0g88b2g7637438347d2" version="1" />
+					<attribute id="Flag" type="int64" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_ARM_Boots_Hide" />
+					<attribute id="IsInspector" type="bool" value="True" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="LevelOverride" type="int64" value="-1" />
+					<attribute id="MapKey" type="FixedString" value="4651eaab-c09b-46fd-ba45-084f50f57e69" />
+					<attribute id="Name" type="LSString" value="NECRO_Step_of_Death" />
+					<attribute id="ParentTemplateId" type="FixedString" value="8166e78b-a5c1-42d3-8ffb-a0f87cf4f789" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="a4c77b5e-bf2f-771a-ba49-a40e3dfa1e8f" />
+					<attribute id="ReadinessFlags" type="uint32" value="144" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Step_of_Death" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="b3f5e478-a9fd-2c05-cedc-666a2627778e" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209026" />
+					<children>
+						<node id="GameMaster" />
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int64" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3ea82655-5140-4287-9ab8-794559f182d3" />
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<!-- Tutorial Chest -->
+				<node id="GameObjects">
+					<attribute id="DisplayName" type="TranslatedString" handle="ha215e968gbbb4g46d1gbc8dg86b2333056c8" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hbda09953gba47g4131g9373ga9670a67a988" version="1" />
+					<attribute id="InventoryType" type="uint8" value="38" />
+					<attribute id="IsInspector" type="bool" value="False" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="c271bf2f-9583-40bd-b644-64d5e71296ef" />
+					<attribute id="ParentTemplateId" type="FixedString" value="7aef0ad4-113a-402b-8491-e2dbff9add19" />
+					<attribute id="VisualTemplate" type="FixedString" value="7cf13ea4-7c10-009b-ca3b-58f2c9ef64e8" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="8c797c9b-5557-71f8-1b38-521174313729" />
+					<attribute id="Icon" type="FixedString" value="Item_CONT_GEN_Chest_Jewel_A" />
+					<attribute id="Name" type="LSString" value="Necrotic_Artifacts" />
+					<attribute id="Stats" type="FixedString" value="Necrotic_Artifacts" />
+					<attribute id="ReadinessFlags" type="uint32" value="140" />
+					<attribute id="Tooltip" type="uint8" value="2" />
+					<attribute id="Scale" type="float" value="0.5" />
+					<attribute id="TreasureOnDestroy" type="bool" value="True" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="WalkThrough" type="bool" value="False" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209034" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="Necrotic_Artifacts_Table" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

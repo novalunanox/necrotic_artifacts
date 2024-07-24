@@ -1,0 +1,51 @@
+new entry "LATENT_CORPSE_NECRO"
+type "StatusData"
+data "StatusType" "BOOST"
+// Latent Corpse
+data "DisplayName" "h66c873adg2345g4690ga35eg6936a678bde1"
+// Your <LSTag Type="Spell" Tooltip="Target_Hex">Hex</LSTag> has marked this enemy with an unholy curse that will cause it to rise again once defeated, and serve you until you complete your next long rest.
+data "Description" "hdab3c3e1ga597g4f5ag82adg8d6580e822f6"
+data "Icon" "statIcons_FleshRot"
+data "StackId" "LATENT_CORPSE_NECRO"
+data "StatusPropertyFlags" "FreezeDuration"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Death)):SwitchDeathType(Explode);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75, UntilLongRest,,,,ENTHRALLED_CORPSE_NECRO,SHADOWCURSE_SUMMON_CHECK);RemoveStatus(LATENT_CORPSE_NECRO);RemoveStatus(SELF, NECROTIC_POTENCY_NECRO)"
+data "StatusGroups" "SG_Cursed"
+
+new entry "DEPLETED_POTENCY_NECRO"
+type "StatusData"
+data "StatusType" "BOOST"
+// Depleted Potency
+data "DisplayName" "h49765584gae04g4879ga5b3gf1b4b3ec1531"
+// Your necrotic potency has been spent and depleted until completing a long rest.
+data "Description" "h4372d287ga7efg45aeg91ffg953a6a397442"
+data "Icon" "Status_Petrified"
+data "StackId" "DEPLETED_POTENCY_NECRO"
+data "StackType" "Overwrite"
+data "StatusPropertyFlags" "FreezeDuration"
+data "OnRemoveFunctors" "ApplyStatus(SELF, NECROTIC_POTENCY_NECRO)"
+
+new entry "NECROTIC_POTENCY_NECRO"
+type "StatusData"
+data "StatusType" "BOOST"
+// Necrotic Potency
+data "DisplayName" "h5eddf73bgdea4g442dga5f6g682bd0b39cf8"
+// Your potent aura of death will cause your next victim to rise again as a <LSTag Type="Status" Tooltip="ZOMBIE_DECAY">Zombie</LSTag> thrall.
+data "Description" "hade256f4ge7f7g4d4eg9ee3g701290a1cf99"
+data "Icon" "Status_Turned"
+data "StackId" "NECROTIC_POTENCY_NECRO"
+data "StackType" "Overwrite"
+data "StatusPropertyFlags" "FreezeDuration"
+data "OnRemoveFunctors" "ApplyStatus(SELF, DEPLETED_POTENCY_NECRO)"
+
+new entry "ENTHRALLED_CORPSE_NECRO"
+type "StatusData"
+data "StatusType" "BOOST"
+// Necrotic Potency
+data "DisplayName" "hb7e9e029g14f6g462bg9bc6g092f6f5fa5d6"
+// Your potent aura of death will cause your next victim to rise again as a <LSTag Type="Status" Tooltip="ZOMBIE_DECAY">Zombie</LSTag> thrall.
+data "Description" "h236489fdg4759g449aga141g7bcd40180379"
+data "Icon" "Status_Turned"
+data "StackId" "ENTHRALLED_CORPSE_NECRO"
+data "StackType" "Additive"
+data "StatusPropertyFlags" "FreezeDuration"
+

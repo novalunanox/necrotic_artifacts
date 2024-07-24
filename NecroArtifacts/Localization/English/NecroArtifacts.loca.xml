@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<!-- Placeholder -->
+		<content contentuid="h69754c5cgdbfcg4822gb238gf59ce2076dc5" version="1">Robe of Placeholder</content>
+		<content contentuid="ha0d2044bg82d2g41e1g8eacgfbfdf9646c69" version="1">This is a robe.</content>
+
+	<!-- RINGS -->
+	<!-- RING OF ENTHRALLING DEATH -->
+		<content contentuid="h13f2f8c2g6475g4d0ag97f4g80d09e8b5412" version="1">Ring of Enthralling Death</content>
+		<content contentuid="hcd912267gcf05g4ec5g9e73g07404405fbf6" version="1">The silver of this ring is tarnished with age, but its glittering gemstone glows with an alluring magenta aura that compels your eyes to stare and behold it.</content>
+
+		<content contentuid="h5eddf73bgdea4g442dga5f6g682bd0b39cf8" version="1">Necrotic Potency</content>
+		<content contentuid="hade256f4ge7f7g4d4eg9ee3g701290a1cf99" version="1">Once per long rest, this ring's potent aura of death will cause the wearer's next victim to rise again as an &lt;LSTag Type="Status" Tooltip="ENTHRALLED_CORPSE_NECRO"&gt;Enthralled Corpse&lt;/LSTag&gt; if it dies while &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hexed&lt;/LSTag&gt;.</content>
+
+		<content contentuid="h49765584gae04g4879ga5b3gf1b4b3ec1531" version="1">Depleted Potency</content>
+		<content contentuid="h4372d287ga7efg45aeg91ffg953a6a397442" version="1">Your necrotic potency has been spent and depleted until completing a long rest.</content>
+
+		<content contentuid="h66c873adg2345g4690ga35eg6936a678bde1" version="1">Latent Corpse</content>
+		<content contentuid="hdab3c3e1ga597g4f5ag82adg8d6580e822f6" version="1">Your &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt; has marked this enemy with an unholy curse that will cause it to rise again once defeated, and serve you until you complete your next long rest.</content>
+
+		<content contentuid="hb7e9e029g14f6g462bg9bc6g092f6f5fa5d6" version="1">Enthralled Corpse</content>
+		<content contentuid="h236489fdg4759g449aga141g7bcd40180379" version="1">Inflicted with a curse by your &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt;, this mindless undead will serve you until your next long rest.</content>
+
+
+	<!-- HELMS -->
+		<content contentuid="h642c57a5gbf3ag408eg91d9g44fb3762d9c4" version="1">Circlet of Enthralling Death</content>
+		<content contentuid="h0fa8e3e8gf50dg450dg87efgf0a1b6ee876b" version="1">A coldness clings to this macabre circlet, like the chill of a grave.</content>
+	<!-- GLOVES -->
+		<content contentuid="h079cdb5eg5a87g438aga8bfgebfb0829301a" version="1">Ilyn's Grasp</content>
+		<content contentuid="hf5f1d4f5g785cg4131g9611g11f65aa23e2a" version="1">These arcane gloves are engraved with the initials &#x27;I.T.&#x27;.</content>
+	<!-- BOOTS -->
+		<content contentuid="h97689dc3g7464g43b0g88b2g7637438347d2" version="1">Step of Death</content>
+		<content contentuid="hc32f009fg045dg4273ga4e2g9b2461650dd1" version="1">These boots are imbuded with the unholy powers of undeath.</content>
+	<!-- TUT CHEST -->
+		<content contentuid="ha215e968gbbb4g46d1gbc8dg86b2333056c8" version="1">Necrotic Artifacts</content>
+		<content contentuid="hbda09953gba47g4131g9373ga9670a67a988" version="1">A malicious hum of magic wafts off this glowing chest.</content>
+
+</contentList>

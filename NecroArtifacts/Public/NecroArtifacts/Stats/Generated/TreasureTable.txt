@@ -1,0 +1,28 @@
+new treasuretable "TUT_Chest_Potions"
+CanMerge 1
+new subtable "1,1"
+object category "I_Necrotic_Artifacts",1,0,0,0,0,0,0,0
+
+new treasuretable "Necrotic_Artifacts_Table"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Step_of_Death",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Ilyns_Grasp",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Ring_of_Enthralling_Death",1,0,0,0,0,0,0,0
+
+new treasuretable "HAG_Lair_RingChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Step_of_Death",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_Spiders_SpiderHermit_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Ilyns_Grasp",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_UnfortunateGnome_MillCellarChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Ring_of_Enthralling_Death",1,0,0,0,0,0,0,0
