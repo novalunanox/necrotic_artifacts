@@ -8,6 +8,13 @@ data "StatsFunctorContext" "OnDamage"
 data "Conditions" "HasHexStatus() and HasStatus('NECROTIC_POTENCY_NECRO',context.Source)"
 data "StatsFunctors" "ApplyStatus(LATENT_CORPSE_NECRO,100)"
 
+new entry "Hex_Broken_NECRO"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnTurn"
+data "Conditions" "not HasHexStatus() and HasStatus(LATENT_CORPSE_NECRO)"
+data "StatsFunctors" "RemoveStatus(LATENT_CORPSE_NECRO)"
+
 new entry "Reapply_Potency_NECRO"
 type "PassiveData"
 data "Properties" "IsHidden"
