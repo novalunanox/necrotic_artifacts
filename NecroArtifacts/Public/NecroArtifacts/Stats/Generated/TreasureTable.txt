@@ -11,6 +11,16 @@ new subtable "1,1"
 object category "I_NECRO_Ilyns_Grasp",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_NECRO_Ring_of_Enthralling_Death",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Eye_of_the_Beholder",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Malicious_Touch",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Strahds_Kiss",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Band_Affliction",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_NECRO_Barbed_Staff",1,0,0,0,0,0,0,0
 
 new treasuretable "HAG_Lair_RingChest"
 CanMerge 1
@@ -26,3 +36,13 @@ new treasuretable "FOR_UnfortunateGnome_MillCellarChest"
 CanMerge 1
 new subtable "1,1"
 object category "I_NECRO_Ring_of_Enthralling_Death",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_Spectator_Reward"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Eye_of_the_Beholder",1,0,0,0,0,0,0,0
+
+new treasuretable "HAG_AppleBushel"
+CanMerge 1
+new subtable "1,1"
+object category "I_NECRO_Malicious_Touch",1,0,0,0,0,0,0,0

@@ -20,7 +20,43 @@
 
 		<content contentuid="hb7e9e029g14f6g462bg9bc6g092f6f5fa5d6" version="1">Enthralled Corpse</content>
 		<content contentuid="h236489fdg4759g449aga141g7bcd40180379" version="1">Inflicted with a curse by your &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt;, this mindless undead will serve you until your next long rest.</content>
+	<!-- EYE OF THE BEHOLDER -->	
+		<content contentuid="hdf1967e0g45bag446bgbef3g241d138da3c9" version="1">Eye of the Beholder</content>
+		<content contentuid="hb8ec059cg59d2g419eg8049g33682c69623a" version="1">Staring into the swirling green of the ring&#39;s emerald gem causes your eyes to water and sting just a little.</content>
 
+		<content contentuid="h78b6c548g932bg41e4ga864ga0add8c89b6c" version="1">Forceful Personality</content>
+		<content contentuid="he43e9433ge567g4cbeg83fagf0d14a9b9816" version="1">You exude an unnatrually beguiling presence that grants you a +[1] bonus to Charisma &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;</content>
+	<!-- MALICIOUS TOUCH -->	
+		<content contentuid="hbdae7de0gab4eg4121ga37ege015cc187736" version="1">Malicious Touch</content>
+		<content contentuid="h75a3df1fg752dg4d18gaa88gc7a6f910fb4d" version="1">Placing this ring on your finger causes your hand to erupt in a bed of glowing ethereal thorns, pulsing with an ominous green energy.</content>
+
+		<content contentuid="h35a35194g1851g46adg8a82g8524bb3edc07" version="1">Grasping Malice</content>
+		<content contentuid="h9fc7fb2bgad99g49a2gbda8g3be0a8a0d16c" version="1">This ring&#39;s spectral barbs grant the wearer +[1] to melee weapon and spell &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; </content>
+
+	<!-- STRAHD'S KISS -->	
+		<content contentuid="h90b4cc21g5039g42e2g8cccgc06faa9dd082" version="1">Strahd&#39;s Kiss</content>
+		<content contentuid="h7250ea7egbd0fg48fbga4aag9f0138572158" version="1">According to legend, this ring&#39;s necrotic energy was imbued by a single drop of Straad&#39;s blood.</content>
+
+	<!-- AFFLICTION BAND -->	
+		<content contentuid="hf6bf8fc8g4641g483cgbdabgd27de4e3ccd0" version="1">Band of Paralell Affliction</content>
+		<content contentuid="h1614a1e8gcc41g43e1gb58eg3160c392e590" version="1">Slipping this ring onto your finger makes your skin vibrate with both great power and a dull, throbbing ache.</content>
+
+		<content contentuid="h384f2966g8cfcg474fga4f9gc718a37a3fd4" version="1">Twin Curse</content>
+		<content contentuid="hbf9ec3ddgc519g4d09g92bbg727d784b68ce" version="1">When concentrating on &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse_NECRO"&gt;Spell Save DC&lt;/LSTag&gt;, this band inflicts the wearer with a curse of their own, granting a -[1] to &lt;LSTag Tooltip="SpellDifficultyClass"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+
+		<content contentuid="hea3112c1ga19eg46dega80cg1554170ce1e2" version="1">Afflicted</content>
+		<content contentuid="h7ca0ddd1g550dg49b5g80b6g4d82a64e1162" version="1">The curse of your band has turned itself toward you until concentration ends.</content>
+
+	<!-- WEAPONS -->
+	<!-- BARBED STAFF -->
+		<content contentuid="hcb838708g39fdg4da7ga193g14500629e302" version="1">Barbed Staff</content>
+		<content contentuid="h24f75443gbbe7g4e24g8d9dg2d9516c21c91" version="1">The memory of thick, oozing blood still lingers on the spindles set into this creaking elmwood staff.</content>
+
+		<content contentuid="h060ba1dag2d74g49dbg9178g6b261d288f5a" version="1">Shred Flesh</content>
+		<content contentuid="h1855a918g3ce5g4d66g94b0gfbae44c54522" version="1">Swipe at an enemy and cause it to &lt;LSTag Type="Status" Tooltip="Bleeding"&gt;bleed&lt;/LSTag&gt;.</content>
+
+		<content contentuid="h4f96f174g2334g4ab4gaba8g2c31422e3f92" version="1">Blood-hungry Barbs</content>
+		<content contentuid="h415d87e7gb656g44d5ga7a0ga85d3a4ee4ad" version="1">Once per short rest, use the sharpened barbs of this staff to &lt;LSTag Type="Spell" Tooltip="Target_Shred_Flesh_NECRO"&gt;Shred the Flesh&lt;/LSTag&gt; of an enemy.</content>
 
 	<!-- HELMS -->
 		<content contentuid="h642c57a5gbf3ag408eg91d9g44fb3762d9c4" version="1">Circlet of Enthralling Death</content>

@@ -4,8 +4,63 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
+			<!-- WEAPONS-->
+				<!-- Barbed Staff -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h24f75443gbbe7g4e24g8d9dg2d9516c21c91" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcb838708g39fdg4da7ga193g14500629e302" version="2" />
+					<attribute id="ExamineRotation" type="fvec3" value="65 180 0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="fe337d8c-1cab-4e0d-ab90-e12751839118" />
+					<attribute id="Name" type="LSString" value="NECRO_Barbed_Staff" />
+					<attribute id="ParentTemplateId" type="FixedString" value="544e81be-cc28-4fdf-aea7-9a31940af4d0" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Barbed_Staff" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<attribute id="StoryItem" type="bool" value="False" />
+					<children>
+							<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MAG_NECROTIC_NECROTIC_WEAPON" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			<!-- AMULETS -->
 			<!-- RINGS -->
+				<!-- Malicious Touch -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h75a3df1fg752dg4d18gaa88gc7a6f910fb4d" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hbdae7de0gab4eg4121ga37ege015cc187736" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="29173e85-9b1a-4ca3-bd19-3d94adefc32b" />
+					<attribute id="Name" type="LSString" value="NECRO_Malicious_Touch" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d874115c-6b92-4222-b1a2-594cf111b075" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Malicious_Touch" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
+				</node>
+				<!-- Eye of the Beholder -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hb8ec059cg59d2g419eg8049g33682c69623a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hdf1967e0g45bag446bgbef3g241d138da3c9" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="04462451-b048-4fb4-b4f2-b7fbbf9b9172" />
+					<attribute id="Name" type="LSString" value="NECRO_Eye_of_the_Beholder" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d5617279-2a10-4749-9d2d-686144178689" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Eye_of_the_Beholder" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
+				</node>
 				<!-- Ring of Enthralling Death -->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="hcd912267gcf05g4ec5g9e73g07404405fbf6" version="1" />
@@ -15,6 +70,31 @@
 					<attribute id="Name" type="LSString" value="NECRO_Ring_of_Enthralling_Death" />
 					<attribute id="ParentTemplateId" type="FixedString" value="6594c1e3-0868-4efd-a93c-b6f4b3bd034d" />
 					<attribute id="Stats" type="FixedString" value="NECRO_Ring_of_Enthralling_Death" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
+				</node>
+				<!-- Strahd's Kiss  -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h7250ea7egbd0fg48fbga4aag9f0138572158" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h90b4cc21g5039g42e2g8cccgc06faa9dd082" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="cf5d74a5-dac0-4d64-a50e-50c4d0df41f7" />
+					<attribute id="Name" type="LSString" value="NECRO_Strahds_Kiss" />
+					<attribute id="ParentTemplateId" type="FixedString" value="846d27b5-c247-4049-9872-86171c172015" />
+					<attribute id="StoryItem" type="bool" value="False" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Strahds_Kiss" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
+				</node>
+				<!-- Band Affliction  -->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h1614a1e8gcc41g43e1gb58eg3160c392e590" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf6bf8fc8g4641g483cgbdabgd27de4e3ccd0" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="a8bc294b-f74b-475a-a086-959b7f15459e" />
+					<attribute id="Name" type="LSString" value="NECRO_Band_Affliction" />
+					<attribute id="ParentTemplateId" type="FixedString" value="57e350dc-5156-49a7-8994-0f6a8eca08ea" />
+					<attribute id="Stats" type="FixedString" value="NECRO_Band_Affliction" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725357" />
 				</node>

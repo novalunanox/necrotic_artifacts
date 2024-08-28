@@ -1,3 +1,5 @@
+// Enthralling Hex Ring
+
 new entry "LATENT_CORPSE_NECRO"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -8,7 +10,7 @@ data "Description" "hdab3c3e1ga597g4f5ag82adg8d6580e822f6"
 data "Icon" "statIcons_FleshRot"
 data "StackId" "LATENT_CORPSE_NECRO"
 data "StatusPropertyFlags" "FreezeDuration"
-data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Death)):SwitchDeathType(Explode);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75, UntilLongRest,,,,ENTHRALLED_CORPSE_NECRO,SHADOWCURSE_SUMMON_CHECK);RemoveStatus(LATENT_CORPSE_NECRO);RemoveStatus(SELF, NECROTIC_POTENCY_NECRO);ApplyStatus(SELF, DEPLETED_POTENCY_NECRO, 100, -1)"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Death)):SwitchDeathType(Explode);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75, UntilLongRest,,,,ENTHRALLED_CORPSE_NECRO,SHADOWCURSE_SUMMON_CHECK);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):RemoveStatus(LATENT_CORPSE_NECRO);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):RemoveStatus(SELF, NECROTIC_POTENCY_NECRO);IF(RemoveCause(StatusRemoveCause.Death) and not Summon() and IsTargetableCorpse()):ApplyStatus(SELF, DEPLETED_POTENCY_NECRO, 100, -1)"
 data "StatusGroups" "SG_Cursed"
 
 new entry "DEPLETED_POTENCY_NECRO"
@@ -20,7 +22,6 @@ data "DisplayName" "h49765584gae04g4879ga5b3gf1b4b3ec1531"
 data "Description" "h4372d287ga7efg45aeg91ffg953a6a397442"
 data "Icon" "Status_Petrified"
 data "StackId" "DEPLETED_POTENCY_NECRO"
-//data "OnRemoveFunctors" "ApplyStatus(NECROTIC_POTENCY_NECRO,100,-1)"
 
 new entry "NECROTIC_POTENCY_NECRO"
 type "StatusData"
@@ -31,7 +32,6 @@ data "DisplayName" "h5eddf73bgdea4g442dga5f6g682bd0b39cf8"
 data "Description" "hade256f4ge7f7g4d4eg9ee3g701290a1cf99"
 data "Icon" "Status_Turned"
 data "StackId" "NECROTIC_POTENCY_NECRO"
-//data "OnRemoveFunctors" "ApplyStatus(DEPLETED_POTENCY_NECRO,100,-1)"
 
 new entry "ENTHRALLED_CORPSE_NECRO"
 type "StatusData"
@@ -50,6 +50,19 @@ data "StackId" "HEX_TECHNICAL_NECRO"
 data "DisplayName" "h69754c5cgdbfcg4822gb238gf59ce2076dc5"
 data "Description" "ha0d2044bg82d2g41e1g8eacgfbfdf9646c69"
 data "Icon" "statIcons_FleshRot"
-// data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
-data "OnApplyFunctors" "IF(not HasStatus(DEPLETED_POTENCY_NECRO)):ApplyStatus(NECROTIC_POTENCY_NECRO,100,-1)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" 
+data "OnApplyFunctors" "IF(not HasStatus('DEPLETED_POTENCY_NECRO')):ApplyStatus(NECROTIC_POTENCY_NECRO,100,-1)"
+data "OnRemoveFunctors" "IF(not HasStatus('DEPLETED_POTENCY_NECRO')):RemoveStatus(NECROTIC_POTENCY_NECRO,100,-1)"
 
+// Band of Paralell Afflication
+
+new entry "AFFLICTION_OWNER_NECRO"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "AFFLICTION_OWNER_NECRO"
+data "DisplayName" "hea3112c1ga19eg46dega80cg1554170ce1e2"
+data "Description" "h7ca0ddd1g550dg49b5g80b6g4d82a64e1162"
+data "Icon" "GenericIcon_Intent_Debuff"
+data "Boosts" "SpellSaveDC(-1)"
+
+// Barbed Staff

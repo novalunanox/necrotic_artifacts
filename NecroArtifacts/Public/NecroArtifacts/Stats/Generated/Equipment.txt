@@ -1,0 +1,16 @@
+new equipment "S_UND_HookHorror_Hermit"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "NECRO_Barbed_Staff"
+add equipmentgroup
+add equipment entry "LOOT_SCROLL_Sleep"
+add equipmentgroup
+add equipment entry "S_UND_FurnaceSearch_MadRecords"
+add equipmentgroup
+add equipment entry "LOOT_SCROLL_MirrorImage"
+add equipmentgroup
+add equipment entry "LOOT_SCROLL_MistyStep"
+add equipmentgroup
+add equipment entry "UNI_MagicStaff_Part_Crystal"
+add equipmentgroup
+add equipment entry "ALCH_Solution_Potion_FeatherFall"

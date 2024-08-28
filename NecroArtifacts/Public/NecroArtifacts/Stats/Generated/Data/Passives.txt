@@ -4,20 +4,57 @@ type "PassiveData"
 data "DisplayName" "h5eddf73bgdea4g442dga5f6g682bd0b39cf8" 
 // Once per long rest, this ring's potent aura of death will cause the wearer's next victim to rise again as an <LSTag Type="Status" Tooltip="ENTHRALLED_CORPSE_NECRO">Enthralled Corpse</LSTag> if it dies while <LSTag Type="Spell" Tooltip="Target_Hex">Hexed</LSTag>.
 data "Description" "hade256f4ge7f7g4d4eg9ee3g701290a1cf99"
-data "StatsFunctorContext" "OnDamage"
-data "Conditions" "HasHexStatus() and HasStatus('NECROTIC_POTENCY_NECRO',context.Source)"
-data "StatsFunctors" "ApplyStatus(LATENT_CORPSE_NECRO,100)"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "HasHexStatus() and HasStatus('NECROTIC_POTENCY_NECRO',context.Source) and not HasStatus('LATENT_CORPSE_NECRO')"
+data "StatsFunctors" "ApplyStatus(LATENT_CORPSE_NECRO,100,-1,,,,,true)"
 
 new entry "Hex_Broken_NECRO"
 type "PassiveData"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnTurn"
-data "Conditions" "not HasHexStatus() and HasStatus(LATENT_CORPSE_NECRO)"
-data "StatsFunctors" "RemoveStatus(LATENT_CORPSE_NECRO)"
+data "StatsFunctors" "IF(not IsConcentrating(context.Source)):RemoveStatus(LATENT_CORPSE_NECRO)"
 
 new entry "Reapply_Potency_NECRO"
 type "PassiveData"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnLongRest"
-data "Conditions" "HasStatus(NECROTIC_POTENCY_NECRO) or HasStatus(DEPLETED_POTENCY_NECRO)"
+data "Conditions" "HasStatus('NECROTIC_POTENCY_NECRO') or HasStatus('DEPLETED_POTENCY_NECRO')"
 data "StatsFunctors" "ApplyStatus(NECROTIC_POTENCY_NECRO,100,-1)"
+
+new entry "Forceful_Personality_Passive_NECRO"
+using "MAG_Bedazzling_Passive"
+type "PassiveData"
+// Forceful Personality
+data "DisplayName" "h78b6c548g932bg41e4ga864ga0add8c89b6c"
+// You exude an unnatrually beguiling presence that grants you a +[1] bonus to Charisma +[1] bonus to Charisma <LSTag Tooltip="AbilityCheck">Checks</LSTag> and <LSTag Tooltip="SavingThrow">Saving Throws</LSTag>.
+data "Description" "he43e9433ge567g4cbeg83fagf0d14a9b9816;1"
+data "DescriptionParams" "1"
+
+new entry "Grasping_Malice_Passive_NECRO"
+type "PassiveData"
+data "Boosts" "RollBonus(MeleeSpellAttack, 1d4);RollBonus(MeleeWeaponAttack, 1d4)"
+data "DisplayName" "h35a35194g1851g46adg8a82g8524bb3edc07"
+// Grasping Malice
+data "Description" "h9fc7fb2bgad99g49a2gbda8g3be0a8a0d16c;1"
+// The ring's spectral barbs grant the wearer +1d4 to melee weapon and spell attack rolls 
+data "DescriptionParams" "1d4"
+data "BoostContext" "OnCreate;OnEquip"
+
+new entry "Affliction_Band_Passive_NECRO"
+type "PassiveData"
+data "DisplayName" "h384f2966g8cfcg474fga4f9gc718a37a3fd4"
+// Curse for a curse
+data "Description" "hbf9ec3ddgc519g4d09g92bbg727d784b68ce"
+// When concentrating on Bestow Curse, this band inflicts the wearer with a curse of their own, granting a -[1] to &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse_NECRO"&gt;Spell Save DC&lt;/LSTag&gt;.
+data "Conditions" "SpellId('Target_BestowCurse_Ability_Strength') or SpellId('Target_BestowCurse_Ability_Dexterity') or SpellId('Target_BestowCurse_Ability_Constitution') or SpellId('Target_BestowCurse_Ability_Intelligence') or SpellId('Target_BestowCurse_Ability_Wisdom') or SpellId('Target_BestowCurse_Ability_Charisma') or SpellId('Target_BestowCurse_Attack') or SpellId('Target_BestowCurse_ExtraDamage') or SpellId('Target_BestowCurse_SkipTurn')"
+data "StatsFunctorContext" "OnAttack"
+data "StatsFunctors" "ApplyStatus(SELF,AFFLICTION_OWNER_NECRO,100,10,,,,,true)"
+data "DescriptionParams" "1"
+
+new entry "Shred_Flesh_Pasive_NECRO"
+type "PassiveData"
+data "DisplayName" "h4f96f174g2334g4ab4gaba8g2c31422e3f92"
+// Blood-hungry Barbs
+data "Description" "h415d87e7gb656g44d5ga7a0ga85d3a4ee4ad"
+// Once per short rest, use the sharpened barbs of this staff to Shred the Flesh of an enemy.
+data "Boosts" "UnlockSpell(Target_Shred_Flesh_NECRO)"

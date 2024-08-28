@@ -92,3 +92,21 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6"
 data "RootSpellID" "Target_WoundingRay_NECRO"
 data "PowerLevel" "6"
 
+// Bestow Curse
+
+new entry "Target_BestowCurse_NECRO"
+type "SpellData"
+using "Target_BestowCurse"
+data "Cooldown" "OncePerShortRest"
+
+// Barbed Staff
+
+new entry "Target_Shred_Flesh_NECRO"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Slash_New"
+data "Icon" "Action_MagicItem_Fleshrend"
+// Part the Flesh
+data "DisplayName" "h060ba1dag2d74g49dbg9178g6b261d288f5a"
+// Thrust forward with diabolical precision, possibly stymying your target's ability to heal. 
+data "Description" "h1855a918g3ce5g4d66g94b0gfbae44c54522"
